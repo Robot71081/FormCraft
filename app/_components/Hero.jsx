@@ -1,8 +1,9 @@
 import React from 'react'
+import CreateForm from '../dashboard/_components/CreateForm'
 
 function Hero() {
   return (
-    <section className="bg-gray-50">
+      <section className="">
     <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
       <div className="mx-auto max-w-xl text-center">
         <h1 className="text-3xl font-extrabold sm:text-5xl">
@@ -11,24 +12,13 @@ function Hero() {
         </h1>
   
         <p className="mt-4 sm:text-xl/relaxed text-gray-700">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-          numquam ea!
+        Whether you're designing surveys, feedback forms, registration pages, or custom data collection tools, our platform leverages cutting-edge AI to make form creation easier, faster, and smarter.
         </p>
   
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            className="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-            href="#"
-          >
-           Create Ai Form
-          </a>
+        <div className="mt-8 flex flex-wrap justify-center gap-4 ">
+         <CreateForm />
   
-          <a
-            className="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-            href="#"
-          >
-            Learn More
-          </a>
+        
         </div>
       </div>
     </div>

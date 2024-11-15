@@ -54,7 +54,7 @@ function CreateForm() {
     }
   return (
     <div>
-         <Button onClick={()=>setTrigger(true)} className='mr-4 mt-4'>+ Create Form</Button>
+         <Button onClick={()=>setTrigger(true)} className='bg-white text-black   hover:bg-black hover:text-white'>+ Create Form</Button>
       <Dialog open={trigger}>
  
   <DialogContent >

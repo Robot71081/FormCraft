@@ -41,7 +41,7 @@ function Responses() {
   }
 
   return (
-    <div className="p-5 ">
+    <div className="p-5 h-screen ">
       <h2 className="font-bold text-3xl flex items-center justify-between ">Responses</h2>
       <div className="grid gird-cols-2 lg:grid-cols-3 gap-5 mt-4">
       

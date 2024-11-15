@@ -27,15 +27,16 @@ function FormList() {
     }
 
     return (
-        <div className='mt-5 grid grid-cols-2 md:grid-cols-3 gap-5'>
-            {formlist.map((form, index) => {
-                return (
-                    <div key={index}>
-                        <FormItem form={JSON.parse(form.jsonform)} formRecord={form} refreshData={getFormList} />
-                    </div>
-                )
-            })}
-        </div>
+        <div className=' shadow-sm rounded-lg p-6 space-y-4 md:grid md:grid-cols-4 md:space-x-6 md:space-y-0'>
+        {formlist.map((form, index) => {
+          return (
+            <div key={index} className="flex-1"> {/* Ensure it takes available space */}
+              <FormItem form={JSON.parse(form.jsonform)} formRecord={form} refreshData={getFormList} />
+            </div>
+          )
+        })}
+      </div>
+      
     )
 }
 

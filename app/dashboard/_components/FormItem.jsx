@@ -33,14 +33,10 @@ function FormItem({ form, formRecord, refreshData }) {
     }
   };
 
-  
-  
-
   return (
-    <div className="border border-gray-200 shadow-sm rounded-lg p-6 space-y-4 bg-white">
-      <div className="flex justify-between">
-        <h2></h2>
-
+    <div className="border border-gray-200 shadow-sm rounded-lg p-6 space-y-4 bg-white min-h-[250px] flex flex-col">
+      <div className="flex justify-between items-start">
+        {/* Delete Button Trigger */}
         <AlertDialog>
           <AlertDialogTrigger>
             <h2>
@@ -51,7 +47,7 @@ function FormItem({ form, formRecord, refreshData }) {
             <AlertDialogHeader>
               <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
               <AlertDialogDescription>
-                This action cannot be undone. This will permanently delete your account and remove your data from our servers.
+                This action cannot be undone. This will permanently delete your form and remove your data.
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
@@ -62,12 +58,14 @@ function FormItem({ form, formRecord, refreshData }) {
         </AlertDialog>
       </div>
 
+      {/* Form Title and Subheading */}
       <div>
         <h2 className="font-semibold text-xl text-gray-900">{form?.form_title}</h2>
         <h3 className="text-sm text-gray-600">{form?.form_subheading}</h3>
       </div>
 
-      <div className="flex space-x-4">
+      {/* Action Buttons (Share and Edit) */}
+      <div className="flex space-x-4 mt-auto"> {/* mt-auto pushes the buttons to the bottom */}
         <div>
           {/* Wrap Button with RWebShare */}
           <RWebShare

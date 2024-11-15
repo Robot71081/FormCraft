@@ -37,11 +37,11 @@ function FormlistRes({jsonForm,formRecord}) {
 
     <div>
       <h2 className="font-semibold text-xl text-gray-900">{jsonForm?.form_title}</h2>
-      <h3 className="text-sm text-gray-600">{jsonForm?.form_subheading}</h3>
+
       <hr className="my-4" />
       <div className="flex justify-between">
-        <h2 className="text-sm"><strong>45</strong> responses</h2>
-        <Button className="" size="sm" onClick={()=>ExportData()} disabled={loading}>{loading?<Loader2 className='animate-spin'/>:'Export'}</Button>
+        
+        <Button className="" size="sm" onClick={()=>ExportData()} disabled={loading}>{loading?<Loader2 className='animate-spin'/>:'Export Responses'}</Button>
       </div>
     </div>
 
