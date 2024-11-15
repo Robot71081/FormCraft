@@ -26,7 +26,7 @@ function AiForm({params}) {
      jsonForm={jsonForm}
      selectedTheme={record?.theme}
      editable={false}
-     formId={record.id}
+     formId={record?.id}
      
      />
     </div>
