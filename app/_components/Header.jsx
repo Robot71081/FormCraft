@@ -39,7 +39,7 @@ function Header() {
         </div>
 
         <button 
-          className="sm:hidden text-2xl"
+          className="sm:hidden text-2xl bg-[#FFF9C4]"
           onClick={toggleMenu}
         >
           {isMenuOpen ? '✖' : '☰'}
