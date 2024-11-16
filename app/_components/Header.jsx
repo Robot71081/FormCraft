@@ -73,7 +73,7 @@ function Header() {
               <Link href={"/"}><Button variant="outline" className="hover:bg-black hover:text-white w-full mb-2"><Home /> Home</Button></Link>
               <Link href={"/dashboard"}><Button variant="outline" className="hover:bg-black hover:text-white w-full mb-2"><LibraryBig /> My Forms</Button></Link>
               <Link href={"/dashboard/responses"}><Button variant="outline" className="hover:bg-black hover:text-white w-full"><MessagesSquare /> Responses</Button></Link>
-            
+              <CreateForm />
             </>
           ) : (
             <SignInButton>
