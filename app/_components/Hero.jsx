@@ -1,5 +1,6 @@
 import React from 'react'
 import CreateForm from '../dashboard/_components/CreateForm'
+import { useUser } from '@clerk/nextjs'
 
 function Hero() {
   const { user, isSignedIn } = useUser()
