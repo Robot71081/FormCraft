@@ -2,6 +2,7 @@ import React from 'react'
 import CreateForm from '../dashboard/_components/CreateForm'
 
 function Hero() {
+  const { user, isSignedIn } = useUser()
   return (
       <section className="">
     <div className="mx-auto max-w-screen-xl px-4 py-32 h-screen lg:flex lg:h-screen lg:items-center">
@@ -16,6 +17,7 @@ function Hero() {
         </p>
   
         <div className="mt-8 flex flex-wrap justify-center gap-4 ">
+          {isSignedIn&&<CreateForm/>}
          
   
         
